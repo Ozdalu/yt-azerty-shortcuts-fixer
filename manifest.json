@@ -1,0 +1,18 @@
+{
+
+    "manifest_version": 2,
+    "name": "yt-azerty-shortcuts-fixer",
+    "version": "1.0",
+
+    "description": "Fixes the Youtube sortcuts for AZERTY keyboards.",
+
+    "icons": {
+        "48": "icon.svg"
+    },
+
+    "content_scripts": [{
+        "matches": ["https://www.youtube.com/*"],
+        "js": ["yt-azerty-fix.js"]
+    }]
+
+}
